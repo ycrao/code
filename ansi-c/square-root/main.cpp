@@ -27,6 +27,8 @@ float SquareRootFloat(float number) {
     y  = number;
     i  = * ( long * ) &y;
     i  = 0x5f3759df - ( i >> 1 );
+    //0x5f37642f
+    //0x5f375a86
     y  = * ( float * ) &i;
     y  = y * ( f - ( x * y * y ) );
     y  = y * ( f - ( x * y * y ) );
